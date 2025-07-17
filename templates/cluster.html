@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Segmentation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Customer Segmentation using K-Means</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+            <label>Select a CSV File:</label><br>
+            <input type="file" name="file" accept=".csv" required>
+            <br><br>
+            <button type="submit">Cluster Customers</button>
+        </form>
+
+        {% if labels %}
+        <h2>✅ Clustering Results</h2>
+        <p><strong>File:</strong> {{ filename }}</p>
+        <p><strong>Cluster Labels:</strong></p>
+        <ul>
+            {% for label in labels %}
+                <li>Customer Cluster: {{ label }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+</body>
+</html>
