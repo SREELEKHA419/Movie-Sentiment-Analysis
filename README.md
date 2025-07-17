@@ -1,88 +1,88 @@
-Movie Review Sentiment Analysis
 
-A simple machine learning web application that predicts the sentiment of a movie review as **Positive** or **Negative**.  
-Built using **Python**, **Flask**, and **scikit-learn**, this project demonstrates basic Natural Language Processing (NLP) techniques through a user-friendly web interface.
+# 🎬 Movie Review Sentiment Analysis App
 
----
-
- Project Overview
-
-This project uses a logistic regression model trained on a sample dataset of movie reviews. The input text is transformed using a `CountVectorizer`, and the app predicts the sentiment label based on the learned patterns.
+This Flask-based web application uses Natural Language Processing (NLP) to analyze movie reviews and predict whether a review is **Positive** or **Negative**. Users can submit a review and instantly get a sentiment classification.
 
 ---
 
- Features
+ Project Structure
 
-- Binary sentiment classification (Positive / Negative)
-- Web interface to input custom movie reviews
-- Pre-trained ML model with vectorizer
-- Emoji-based sentiment feedback
+```
 
----
+movie-sentiment-analysis/
+├── app.py                  # Flask backend to handle form and prediction
+├── requirements.txt        # Required Python libraries
+├── movie\_reviews.xlsx      # Sample dataset of labeled reviews
+├── sample\_customer\_data.xlsx  # Optional user/customer data for segmentation
+├── templates/              # HTML templates
+│   ├── index.html          # Input form for movie review
+│   └── result.html         # Displays predicted sentiment
+├── static/                 # Optional CSS for styling
+│   └── style.css
+├── OUTPUTS/                # Optional outputs (e.g., logs or screenshots)
+└── README.md               # Project documentation
 
- Tech Stack
-
-- Python
-- Flask
-- Scikit-learn
-- Joblib
-- HTML / CSS
-
----
-
-Project Structure
-
-movie-review-sentiment-analysis/
-├── app.py # Flask backend
-├── sentiment_model.pkl # Trained logistic regression model
-├── vectorizer.pkl # CountVectorizer for text
-├── templates/
-│ ├── index.html # Input form
-│ ├── result.html # Sentiment result page
-│ └── cluster.html # (Optional) Clustering result or visualization
-├── static/
-│ └── style.css # Styling for HTML pages
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
+````
 
 ---
 
- How to Run
+## 🚀 How to Run the App
 
-1. Clone the Repository
+1. **Clone the repository**
    ```bash
-  git clone https://github.com/SREELEKHA419/movie-review-sentiment-analysis.git
-   cd movie-review-sentiment-analysis
+   git clone https://github.com/yourusername/movie-sentiment-analysis.git
+   cd movie-sentiment-analysis
+````
 
-   
-2. Install Requirements
+2. Install required packages
 
-  pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Run the Flask App
+3. Run the application
 
+   ```bash
    python app.py
+   ```
 
-4.Open in Browser
+4. Visit the app in your browser
 
-   http://127.0.0.1:5000/
+   ```
+   http://localhost:5000
+   ```
 
- Example
-Input:
-"The movie was brilliant! Great story and acting."
+---
 
-Output:
-Positive 😊
+ Technologies Used
 
-License
-This project is licensed under the MIT License.
-Feel free to use, share, or modify it with proper attribution.
+* Python
+* Flask
+* scikit-learn
+* pandas
+* HTML/CSS (Jinja2)
+* NLP (CountVectorizer, Logistic Regression)
 
-Developed By
+---
+ Dataset Info
+
+* `movie_reviews.xlsx`: Contains sample reviews and their associated sentiment.
+* `sample_customer_data.xlsx`: Additional data for customer segmentation or review enrichment (optional).
+
+---
+
+ 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+👩‍💻 Author
+
 Sreelekha A S
-B.Tech Computer Science and Engineering
-B. S. Abdur Rahman Crescent Institute of Science and Technology, Chennai
+B.Tech CSE | B.S. Abdur Rahman Crescent Institute of Science and Technology
+[GitHub](https://github.com/SREELEKHA419)
 
+---
 
-
+```
