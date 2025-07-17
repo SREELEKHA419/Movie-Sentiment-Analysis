@@ -38,13 +38,12 @@ movie-review-sentiment-analysis/
 ├── vectorizer.pkl # CountVectorizer for text
 ├── templates/
 │ ├── index.html # Input form
-│ └── result.html # Output page
+│ ├── result.html # Sentiment result page
+│ └── cluster.html # (Optional) Clustering result or visualization
 ├── static/
-│ └── style.css # Styling (optional)
-├── sentiment_analysis.ipynb # Jupyter notebook to train model
+│ └── style.css # Styling for HTML pages
 ├── requirements.txt # Python dependencies
-└── README.md # Project description
-
+└── README.md # Project documentation
 
 
 ---
